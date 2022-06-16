@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    background-color: palevioletred;
+}
+
+.dummyContent {
+    height: 100vh;
+    width: 100vw;
+    background-color: blueviolet;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
