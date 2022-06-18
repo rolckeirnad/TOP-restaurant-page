@@ -1,4 +1,9 @@
 import './index.css';
+import { homePage } from './home.js';
+import { menuPage } from './menu.js';
+import { contactPage } from './contact.js';
+
+import Logo from './hamburger-31775_640.png';
 
 const mainContent = document.querySelector('#content');
 const navOptions = document.querySelectorAll('#mainNav li');
@@ -12,9 +17,29 @@ logoName.innerText = "Burrito Burger";
 
 logoContainer.appendChild(navLogo);
 logoContainer.appendChild(logoName);
-mainContent.classList.add('dummyContent');
-mainContent.textContent = "Changed with js";
 
-function testFunction() {
-    console.log("I was clicked");
+for (let option of navOptions)
+    option.addEventListener('click', _ => displayContent(option.textContent));
+
+function displayContent(option) {
+    cleanContent();
+    switch (option) {
+        case 'Home':
+            homePage(mainContent);
+            break;
+        case 'Menu':
+            menuPage(mainContent);
+            break;
+        case 'Contact':
+            contactPage(mainContent);
+            break;
+        default:
+            homePage(mainContent);
+    }
 }
+
+function cleanContent() {
+    mainContent.innerHTML = '';
+}
+
+displayContent('Home');
