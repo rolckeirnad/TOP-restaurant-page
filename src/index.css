@@ -4,21 +4,60 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: darkmagenta;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#navLogoContainer {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#navLogoContainer img {
+    width: 120px;
+    height: auto;
+    padding: 20px;
+}
+
+#navLogoContainer span {
+    padding-left: 5px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
 nav ul {
+    flex: 1;
     display: flex;
     justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
 }
 
 nav li {
     list-style: none;
     padding: 0.5rem 1rem;
     background-color: palevioletred;
+    height: fit-content;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.dummyContent {
-    height: 100vh;
-    width: 100vw;
-    background-color: blueviolet;
+nav li:hover {
+    background-color: yellow;
 }
 
 footer {
