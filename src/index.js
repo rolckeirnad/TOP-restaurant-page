@@ -18,6 +18,8 @@ logoName.innerText = "Burrito Burger";
 logoContainer.appendChild(navLogo);
 logoContainer.appendChild(logoName);
 
+const home = homePage();
+
 for (let option of navOptions)
     option.addEventListener('click', _ => displayContent(option.textContent));
 
@@ -25,7 +27,7 @@ function displayContent(option) {
     cleanContent();
     switch (option) {
         case 'Home':
-            homePage(mainContent);
+            mainContent.appendChild(home);
             break;
         case 'Menu':
             menuPage(mainContent);

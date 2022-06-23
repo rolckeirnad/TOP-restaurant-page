@@ -1,3 +1,62 @@
-.addColor {
-    color: white;
+.home-container {
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 50px;
+    background-color: #8b008b;
+    border-radius: 20px;
+}
+
+.block-container {
+    border: 5px solid black;
+    background-color: violet;
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+    padding: 10px;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.text,
+.day,
+.address {
+    font-size: 1.4rem;
+}
+
+.block-container.hero {
+    background-image: url('./mexican-food-1561970_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -300px;
+    position: relative;
+    height: 80vh;
+    width: 98vw;
+    color: #3F51B5;
+    text-shadow: 1px 0px 2px black, 0px 1px 2px black, -1px 0px 2px black, 0px -1px 2px black;
+}
+
+.title.hero {
+    position: relative;
+    top: 30px;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.text.hero {
+    position: relative;
+    top: 80px;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+#map {
+    width: 500px;
+    height: 300px;
 }
