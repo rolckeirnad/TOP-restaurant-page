@@ -18,30 +18,30 @@ logoName.innerText = "Burrito Burger";
 logoContainer.appendChild(navLogo);
 logoContainer.appendChild(logoName);
 
-const home = homePage();
-
 for (let option of navOptions)
     option.addEventListener('click', _ => displayContent(option.textContent));
 
 function displayContent(option) {
     cleanContent();
+    let el;
     switch (option) {
         case 'Home':
-            mainContent.appendChild(home);
+            el = homePage();
             break;
         case 'Menu':
-            menuPage(mainContent);
+            el = menuPage();
             break;
         case 'Contact':
-            contactPage(mainContent);
+            el = contactPage();
             break;
         default:
-            homePage(mainContent);
+            el = homePage();
     }
+    mainContent.appendChild(el);
 }
 
 function cleanContent() {
-    mainContent.innerHTML = '';
+    mainContent.replaceChildren();
 }
 
 displayContent('Home');
