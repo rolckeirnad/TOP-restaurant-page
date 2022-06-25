@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 .home-container {
     height: fit-content;
     width: fit-content;
@@ -40,19 +42,20 @@
     width: 98vw;
     color: #3F51B5;
     text-shadow: 1px 0px 2px black, 0px 1px 2px black, -1px 0px 2px black, 0px -1px 2px black;
+    font-family: 'Yellowtail', cursive;
 }
 
 .title.hero {
     position: relative;
     top: 30px;
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .text.hero {
     position: relative;
     top: 80px;
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: normal;
 }
 
